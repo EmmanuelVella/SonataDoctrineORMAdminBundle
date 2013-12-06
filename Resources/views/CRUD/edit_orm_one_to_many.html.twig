@@ -27,7 +27,7 @@ file that was distributed with this source code.
                                             <th>{{ 'action_delete'|trans({}, 'SonataAdminBundle') }}</th>
                                         {% else %}
                                             <th {{ nested_field.vars['required']  ? 'class="required"' : '' }}>
-                                                {{ nested_field.vars['sonata_admin'].admin.trans(nested_field.vars.label) }}
+                                                {{ nested_field.vars['sonata_admin'].admin.trans(nested_field.vars.label, {}, nested_field.vars['sonata_admin'].field_description.translationDomain) }}
                                             </th>
                                         {% endif %}
                                     {% endfor %}
