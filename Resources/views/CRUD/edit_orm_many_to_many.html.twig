@@ -95,7 +95,7 @@ file that was distributed with this source code.
             {% include 'SonataDoctrineORMAdminBundle:CRUD:edit_orm_one_association_script.html.twig' %}
 
         {% else %}
-            <div id="field_container_{{ id }}" class="field-container">
+            <span id="field_container_{{ id }}" class="field-container">
                 <span id="field_widget_{{ id }}" >
                     {{ form_widget(form) }}
                 </span>
@@ -115,7 +115,7 @@ file that was distributed with this source code.
                 </span>
 
                 {% include 'SonataDoctrineORMAdminBundle:CRUD:edit_modal.html.twig' %}
-            </div>
+            </span>
 
             {% include 'SonataDoctrineORMAdminBundle:CRUD:edit_orm_many_association_script.html.twig' %}
         {% endif %}
