@@ -71,7 +71,7 @@ file that was distributed with this source code.
                                     <li class="{% if loop.first %}active{% endif %}">
                                         <a href="#{{ associationAdmin.uniqid }}_{{ loop.parent.loop.index }}_{{ loop.index }}" data-toggle="tab">
                                             <i class="icon-exclamation-sign has-errors hide"></i>
-                                            {{ associationAdmin.trans(name, {}, form_group.translation_domain) }}
+                                            {{ associationAdmin.trans(form_group.label, {}, form_group.translation_domain) }}
                                         </a>
                                     </li>
                                 {% endfor %}
